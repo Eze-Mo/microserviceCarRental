@@ -9,13 +9,13 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '26d08d38-6e13-4ac6-a17e-b1c3b43abb10'
+  azureSubscription: '22fb943b-2940-460a-92f7-844e09c8a190'
   
   # Web app name
-  webAppName: ''
+  webAppName: 'quizmicroservice'
   
   # Environment name
-  environmentName: ''
+  environmentName: 'quizmicroservice'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -38,8 +38,8 @@ stages:
     - script: |
         npm install
         npm run build --if-present
-        npm run test --if-present
-      displayName: 'npm install, build and test'
+        
+      displayName: 'npm install, build'
       
     - task: ArchiveFiles@2
       displayName: 'Archive files'
@@ -68,7 +68,7 @@ stages:
         deploy:
           steps:            
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: '
+            displayName: 'Azure Web App Deploy: quizmicroservice'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
