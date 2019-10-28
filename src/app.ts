@@ -8,7 +8,7 @@ const quizGeneratorController: QuizGeneratorController = new QuizGeneratorContro
 app.set("port", process.env.PORT || 3000);
 
 app.route("/getNames/:Name/:Area")
-    .post(quizGeneratorController.GenerateQuiz);
+    .get(quizGeneratorController.GenerateQuiz);
 
 app.route("processQuiz")
     .post(quizGeneratorController.ProcessQuiz);
