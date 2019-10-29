@@ -10,7 +10,7 @@ app.set("port", process.env.PORT || 3000);
 app.route("/getNames/:Name/:Area")
     .get(quizGeneratorController.GenerateQuiz);
 
-app.route("processQuiz")
+app.route("/processQuiz")
     .post(quizGeneratorController.ProcessQuiz);
 
 app.route("*")
