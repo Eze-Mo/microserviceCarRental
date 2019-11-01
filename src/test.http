@@ -1,3 +1,1 @@
-POST http://127.0.0.1:3000/getNames/pepe/Sports
-
-POST https://quizmicroservice.azurewebsites.net/getNames/asdsad/Sports/
+POST http://127.0.0.1:3000/processQuiz

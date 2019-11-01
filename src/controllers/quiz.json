@@ -1,7 +1,7 @@
 {
     "quiz": {
         "NodeJs": {
-            "q1": {
+            "1": {
                 "question": "What is the NPM?",
                 "options": [
                     "Nugget Package Manager",
@@ -10,7 +10,7 @@
                 ],
                 "answer": "Node Package Management"
             },
-            "q2": {
+            "2": {
                 "question": "Does nodejs run on windows?",
                 "options": [
                     "Yes",
@@ -19,7 +19,7 @@
                 ],
                 "answer": "Yes"
             },
-            "q3": {
+            "3": {
                 "question": "What is ‘callback’ in Node.js?",
                 "options": [
                     "Just an internal method in any NodeJs application",
@@ -28,7 +28,7 @@
                 ],
                 "answer": "Function used to deal with multiple requests made to the server"
             },
-            "q4": {
+            "4": {
                 "question": "What is express?",
                 "options": [
                     "An external module",
@@ -37,7 +37,7 @@
                 ],
                 "answer": "An external module"
             },
-            "q5": {
+            "5": {
                 "question": "How can you delete a file in Node using fs?",
                 "options": [
                     "fs.remove(path, callback)",
@@ -46,7 +46,7 @@
                 ],
                 "answer": "fs.unlink(path, callback)"
             },
-            "q6": {
+            "6": {
                 "question": "In order to fire events you can do:",
                 "options": [
                     "emitter.on(eventName, listener)",
@@ -55,7 +55,7 @@
                 ],
                 "answer": "emitter.emit(eventName[, ...args])"
             },
-            "q7": {
+            "7": {
                 "question": "How to uninstall a dependency using npm?",
                 "options": [
                     "npm install -u dependency-name",
@@ -64,7 +64,7 @@
                 ],
                 "answer": "npm uninstall dependency-name"
             },
-            "q8": {
+            "8": {
                 "question": "What is the Package.json?",
                 "options": [
                     "File that holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies",
@@ -73,7 +73,7 @@
                 ],
                 "answer": "File that holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies"
             },
-            "q9": {
+            "9": {
                 "question": "How can you remove a directory?",
                 "options": [
                     "fs.rmdir(path, callback)",
@@ -82,7 +82,7 @@
                 ],
                 "answer": "fs.rmdir(path, callback)"
             },
-            "q10": {
+            "10": {
                 "question": "To accommodate the single-threaded event loop, and handle asynchronous events Node.js uses the library?",
                 "options": [
                     "Libuv",
@@ -93,7 +93,7 @@
             }
         },
         "Sports": {
-            "q1": {
+            "1": {
                 "question": "how many championships Michael Jordan won?",
                 "options": [
                     "5",
@@ -102,7 +102,7 @@
                 ],
                 "answer": "6"
             },
-            "q2": {
+            "2": {
                 "question": "The New York Yankees has?",
                 "options": [
                     "27 World Series championships",
@@ -111,7 +111,7 @@
                 ],
                 "answer": "27 World Series championships"
             },
-            "q3": {
+            "3": {
                 "question": "Who was Ayrton Senna?",
                 "options": [
                     "Brazilian F1 racing driver",
@@ -120,7 +120,7 @@
                 ],
                 "answer": "Brazilian F1 racing driver"
             },
-            "q4": {
+            "4": {
                 "question": "The team with more championships at the FA Premier League is?",
                 "options": [
                     "Rangers Football Club (18)",
@@ -131,7 +131,7 @@
             }
         },
         "Music": {
-            "q1": {
+            "1": {
                 "question": "The female artist with more Latin Grammys won is?",
                 "options": [
                     "Natalia Lafourcade (10)",
@@ -140,7 +140,7 @@
                 ],
                 "answer": "Shakira (13)"
             },
-            "q2": {
+            "2": {
                 "question": "The highest grossing album of 2017 in US?",
                 "options": [
                     "Taylor Swift, Reputation",
@@ -149,7 +149,7 @@
                 ],
                 "answer": "Ed Sheeran, ÷ (Divide)"
             },
-            "q3": {
+            "3": {
                 "question": "the highest music viewed video on youtube 2017?",
                 "options": [
                     "See You Again - Wiz Khalifa featuring Charlie Puth",
