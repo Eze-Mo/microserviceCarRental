@@ -3,7 +3,6 @@ import myquiz from "./quiz.json";
 import { Score } from "../models/score";
 export class QuizGeneratorController {
     public GenerateQuiz(req: Request, res: Response) {
-        console.log(req.url);
         
         const name = req.params["Name"];
 
@@ -18,7 +17,7 @@ export class QuizGeneratorController {
                 break;
             case "Node.js":
                 console.log("Request made for user " + name);
-                res.status(200).json(myquiz.quiz.NodeJs + name);
+                res.status(200).json(myquiz.quiz.NodeJs);
                 break;
             default:
                 res.status(404).send({ message: "Invalid Category " + name });
@@ -27,6 +26,7 @@ export class QuizGeneratorController {
     }
 
     public ProcessQuiz(req: Request, res: Response) {
+        res.header("Access-Control-Allow-Origin", "http://localhost:4200"); // update to match the domain you will make the request from
         let score: number = 0;
         const userScore = new Score();
         userScore.name = req.body["name"];

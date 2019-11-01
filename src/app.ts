@@ -24,10 +24,10 @@ app.route("/getNames/:Name/:Area")
 app.route("/processQuiz")
     .post(quizGeneratorController.ProcessQuiz);
 
-//  app.route("*")
-//     .post(quizGeneratorController.handle404)
-//     .get(quizGeneratorController.handle404)
-//     .put(quizGeneratorController.handle404)
-//     .delete (quizGeneratorController.handle404);
+  app.route("*")
+     .post(quizGeneratorController.handle404)
+     .get(quizGeneratorController.handle404)
+    .put(quizGeneratorController.handle404)
+    .delete (quizGeneratorController.handle404);
 
 export default app;
