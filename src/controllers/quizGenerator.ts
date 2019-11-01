@@ -26,7 +26,6 @@ export class QuizGeneratorController {
     }
 
     public ProcessQuiz(req: Request, res: Response) {
-        res.header("Access-Control-Allow-Origin", "http://localhost:4200"); // update to match the domain you will make the request from
         let score: number = 0;
         const userScore = new Score();
         userScore.name = req.body["name"];
